@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --progress: 5;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+}
+
+.container {
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+    min-width: 743px;
+    border-radius: 10px;
+    background: #3579f5;
+    padding: 12px 32px 12px 22px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.progress-bar {
+    margin-right: 12px;
+}
+.progress-bar span {
+    font-size: 20px;
+    padding: 20px;
+}
+.content {
+    line-height: 18px;
+}
+.content span {
+    background: #2364db;
+    padding: 3px 10px;
+    border-radius: 40px;
+}
+.progress {
+    margin: 4px 0;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.progress-bar circle:nth-child(2) {
+    stroke-dashoffset: calc(100 - var(--progress));
+}
+
+button {
+    color: #3579f5;
+    line-height: 20px;
+    background: #f4f8ff;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 10px 32px;
+    border: none;
+}
